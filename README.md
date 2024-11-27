@@ -8,9 +8,10 @@ Flask
 rasa
 
 ## Langkah Langkah Penggunaan
-##Terminal 1
+
+-Terminal 1
 Jalankan: rasa run --enable-api --endpoints endpoints.yml
-##Terminal 2
+-Terminal 2
 Jalankan: rasa run actions --port 5055
-##Terminal 3 (didalam folder web)
+Terminal 3 (didalam folder web)
 Jalankan: py app.py
