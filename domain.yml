@@ -1,0 +1,37 @@
+version: "3.0"
+
+intents:
+  - ask_weather
+  - greet
+  - goodbye
+  - thanks
+
+entities:
+  - city
+
+
+
+responses:
+  utter_greet:
+    - text: "Hello! I am your weather assistant. Ask me about the weather in any city!"
+    - text: "Hi there! Feel free to ask about the weather in popular cities around the world."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+    - text: "Take care! See you next time."
+
+  utter_thanks:
+    - text: "You're welcome! Let me know if you need anything else."
+    - text: "Happy to help! Ask me more questions anytime."
+
+  utter_weather:
+    - text: "It’s {temperature}°C currently in {city}. The weather can be described as {weather}. Did that help you?"
+    - text: "The current weather in {city} is {weather} with a temperature of {temperature}°C. Does that help?"
+    - text: "In {city}, it’s {temperature}°C right now. The weather is {weather}. Is that what you were looking for?"
+    - text: "The temperature in {city} is {temperature}°C with {weather} conditions. Does that answer your question?"
+
+  utter_default:
+    - text: "I’m sorry, I didn’t quite understand that. Could you try rephrasing?"
+
+actions:
+  - action_provide_weather
