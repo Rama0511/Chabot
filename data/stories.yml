@@ -1,0 +1,24 @@
+version: "3.0"
+
+stories:
+  - story: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Respond to thanks
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: Provide weather information
+    steps:
+      - intent: ask_weather
+        entities:
+          - city: "Berlin"
+      - action: action_provide_weather
